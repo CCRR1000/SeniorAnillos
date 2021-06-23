@@ -1,5 +1,7 @@
 package src.Personajes.Bestias;
 
+import src.Juego.Rand;
+
 public class VectorBestias {
 
     private Bestia[] bestias = {new Orco("Ghethrof"), new Orco("Srocri"), new Orco("Krarzegh"), new Orco("Bruzgaf"), 
@@ -7,10 +9,6 @@ public class VectorBestias {
                                 new Trasgo("Augzush"), new Trasgo("Aucbo"), new Trasgo("Auharg")};
 
     public VectorBestias() {
-
-        
-
-
 /* 
         Bestia orco1 = new Orco("Ghethrof");
         Bestia orco2 = new Orco("Srocri");
@@ -27,4 +25,23 @@ public class VectorBestias {
         Bestia[] bestias = { orco1, orco2, orco3, orco4, orco5, trasgo1, trasgo2, trasgo3, trasgo4, trasgo5 };
  */
     }
+    
+    public Bestia[] crearEjercitoBestias(int cantBestias) {
+
+        Bestia[] ejercito = new Bestia[cantBestias];
+        for (int i = 0; i < cantBestias; i++) {
+            ejercito[i] = bestias[Rand.indicePersonaje(bestias.length)];
+        }
+        return ejercito;
+    }
+
+    public Bestia[] getBestias() {
+        return bestias;
+    }
+
+    public void setBestias(Bestia[] bestias) {
+        this.bestias = bestias;
+    }
+
+    
 }
