@@ -19,7 +19,9 @@ public class Rand {
         return random.nextInt(limSuperior + 1);
     }
 
-
+    public static int indicePersonaje(int longEjercito) {
+        return random.nextInt(longEjercito);
+    }
 
 }
 
