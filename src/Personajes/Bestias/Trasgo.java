@@ -8,5 +8,10 @@ public class Trasgo extends Bestia {
 
     public Trasgo() {
     }
+
+    @Override
+    public String toString() {
+        return "TRASGO "+ super.toString();
+    }
     
 }
