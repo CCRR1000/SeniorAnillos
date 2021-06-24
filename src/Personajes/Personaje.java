@@ -1,5 +1,7 @@
 package src.Personajes;
 
+import src.Juego.Rand;
+
 public class Personaje {
 
     protected String nombre;
@@ -13,7 +15,18 @@ public class Personaje {
         this.vida = vida;
     }
 
+    public void setValorArmaduras(Personaje[] personajes) {
 
+        for (int i = 0; i < personajes.length; i++) {
+            personajes[i].setArmadura(Rand.asignarArmadura(5, 20));
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return "<Nombre: "+nombre+", Vida: "+vida+", Armadura: "+armadura +", Ataque: "+ataque+">";
+    }
 
     public String getNombre() {
         return nombre;
