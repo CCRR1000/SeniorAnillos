@@ -18,7 +18,7 @@ public class Personaje {
     public void setValorArmaduras(Personaje[] personajes) {
 
         for (int i = 0; i < personajes.length; i++) {
-            personajes[i].setArmadura(Rand.asignarArmadura(5, 20));
+            personajes[i].setArmadura(Rand.asignarArmadura(50, 70));
         }
 
     }
