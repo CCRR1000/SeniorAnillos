@@ -8,5 +8,11 @@ public class Orco extends Bestia {
 
     public Orco() {
     }
+
+    @Override
+    public String toString() {
+        return "ORCO "+ super.toString();
+    }
+    
     
 }
