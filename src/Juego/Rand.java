@@ -24,12 +24,3 @@ public class Rand {
     }
 
 }
-
-class Duelo {
-
-    public Duelo(Heroe[] heroe, Bestia[] bestia) {
-
-
-    }
-
-}
