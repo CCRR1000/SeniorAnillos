@@ -9,6 +9,11 @@ public class Elfo extends Heroe {
     public Elfo() {
     }
 
+    @Override
+    public String toString() {
+        return "ELFO "+ super.toString();
+    }
+
     
     
     
