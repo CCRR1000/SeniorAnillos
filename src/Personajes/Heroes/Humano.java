@@ -9,4 +9,8 @@ public class Humano extends Heroe {
     public Humano() {
     }
     
+    @Override
+    public String toString() {
+        return "HUMANO "+ super.toString();
+    }
 }
